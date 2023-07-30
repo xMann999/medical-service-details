@@ -5,7 +5,6 @@ import lombok.Data;
 @Data
 public class DoctorDto {
 
-    private final String type = "Doctor";
     private final Long id;
     private final String email;
     private final String firstName;

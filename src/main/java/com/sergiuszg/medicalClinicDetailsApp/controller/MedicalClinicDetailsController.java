@@ -1,5 +1,6 @@
 package com.sergiuszg.medicalClinicDetailsApp.controller;
 
+import com.sergiuszg.medicalClinicDetailsApp.model.MedicalClinicDetailsDto;
 import com.sergiuszg.medicalClinicDetailsApp.service.MedicalClinicDetailsService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -25,7 +26,7 @@ public class MedicalClinicDetailsController {
             @ApiResponse(responseCode = "500", description = "Medical service server error", content = @Content)
     })
     @GetMapping("/details")
-    public List<Object> getDetails() {
+    public MedicalClinicDetailsDto getDetails() {
         return medicalClinicDetailsService.showAllDetails();
     }
 }

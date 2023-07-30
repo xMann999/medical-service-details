@@ -7,7 +7,6 @@ import java.time.LocalDate;
 @Data
 public class PatientDto {
 
-    private final String type = "Patient";
     private final Long id;
     private final String email;
     private final String password;
